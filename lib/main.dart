@@ -14,14 +14,16 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'HishabMama',
-        initialRoute: '/',
-        routes: {
-          '/': (context) => LoginScreen(),
-          RegisterScreen.routeName: (context) => RegisterScreen(),
-        },
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'HishabMama',
+      initialRoute: '/',
+      routes: {
+        //'/': (context) => LoginScreen(),
+        //RegisterScreen.routeName: (context) => RegisterScreen(),
+        '/': (context) => RegisterScreen(),
+        LoginScreen.routeName: (context) => LoginScreen(),
+      },
     );
   }
 }
